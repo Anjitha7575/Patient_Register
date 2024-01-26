@@ -1,0 +1,111 @@
+
+.home{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    --topgap: 60px;
+    --leftgap: 100px;
+    --appColor: #446bd9;
+    --bgColor: #f0f8ffad;
+}
+header{
+    position: fixed;
+    height: var(--topgap);
+    width: calc(100% - var(--leftgap));
+    box-shadow: 0 2px 2px #88888840;
+    margin-left: 100px;
+    z-index: 100;
+    background: white;
+}
+nav{
+    position: fixed;
+    width: var(--leftgap);
+    height: 100%;
+    border-right: 1px solid lightgrey;
+}
+
+.dashbrd{
+    margin-top: var(--topgap);
+    margin-left: var(--leftgap);
+    width: calc(100% - (var(--leftgap)));
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    background: var(--bgColor);
+    height: calc(100% - var(--topgap) - 100px);
+    padding-top: 100px;
+}
+@media screen and (max-width: 800px){
+    nav{
+        display: none;
+    }
+    header{
+        margin-left: 0;
+        width: 100%;
+    }
+    .dashbrd{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+.custom-hd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 100%;
+}
+.custom-hd .title{
+    font-size: 20px;
+    font-weight: 900;
+    margin-left: 50px;
+}
+.custom-hd .userAcc{
+    font-size: 14px;
+    background: var(--appColor);
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    color: white;
+}
+.custom-nav{
+    height: 100%;
+    background-color: var(--appColor);
+    color: white;
+}
+
+.custom-nav ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.custom-nav ul li{
+    list-style: none;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    flex-direction: column;
+}
+
+.custom-nav .menus{
+    height: 100px;
+}
+.custom-nav .logout{
+    margin-top: auto;
+}
+.menutitle{
+    font-size: 12px;
+}

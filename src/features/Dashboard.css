@@ -1,0 +1,80 @@
+
+table{
+    border-radius: 10px;
+    border-spacing: 0;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 1000px;
+}
+
+tr{
+    padding: 10px;
+}
+thead td{
+    padding: 20px 10px;
+    font-weight: 500;
+}
+tbody td{
+    padding: 10px;
+}
+td{
+    text-transform: capitalize;
+    border-bottom: 1px solid #dcdcdc;
+    width: 300px;
+}
+@media screen and (max-width: 1200px){
+    table{
+        width: auto;
+    }
+    td{
+        width: auto;
+    }
+}
+tbody tr:last-child > td{
+    border: none;
+}
+.sort{
+    border: none;
+    background: none;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 5px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--appColor);
+    box-shadow: rgb(177 176 176 / 35%) 0px 5px 15px;
+}
+.pagination{
+    display: flex;
+    justify-content: end;
+}
+.pagination button{
+    border: none;
+    color: var(--appColor);
+    font-size: 25px;
+    background: none;
+    cursor: pointer;
+}
+.pagination button:disabled {
+    opacity: .4;
+    color: gray;
+}
+
+.customslider{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px;
+}
+
+.customslider .info{
+    font-weight: bold;
+    margin: 0 30px;
+}
